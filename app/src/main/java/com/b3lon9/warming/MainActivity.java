@@ -21,18 +21,17 @@ public class MainActivity extends AppCompatActivity {
 //        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 //        ft.remove(mainFragment);
 //        ft.replace(R.id.main_fragment, mainFragment);
-//
-//        mainBtn = findViewById(R.id.main_button);ft.commit();
-        fragmentManager = new FragmentManager(this);
-        fragmentManager.replace(R.id.main_fragment, Constant.FRAGMENT_MAIN);
 
-        mainBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("[debug]", "Button Test, Long Time No See Android");
+        fragmentManager = new FragmentManager(this, R.id.main_fragment);
+        fragmentManager.replace(Constant.FRAGMENT_MAIN);
 
-//                fragmentManager.replace(R.id.sub_fragment, Constant.FRAGMENT_SUB);
-            }
-        });
+        mainBtn = findViewById(R.id.main_button);
+        mainBtn.setOnClickListener(clickListener);
     }
+
+    private View.OnClickListener clickListener = view -> {
+        Log.d("[debug]", "Button Test, Long Time No See Android");
+        fragmentManager.replace(Constant.FRAGMENT_SUB);
+
+    };
 }
