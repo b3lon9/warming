@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textview">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="textview1" parent="textview">
+        <item name="android:background">#33af55</item>
+    </style>
+
+    <style name="textview2" parent="textview">
+        <item name="android:background">#ff8866</item>
+    </style>
+
+    <style name="textview3" parent="textview">
+        <item name="android:background">#8866ff</item>
+    </style>
+</resources>
