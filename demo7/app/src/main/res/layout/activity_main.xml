@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뷰 전환 하기"
+        android:layout_gravity="center"
+        android:onClick="onBtnClick" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#33af55"
+            android:text="텍스트"
+            android:textSize="44sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8866ff"
+            android:text="텍스트"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txt02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff8866"
+            android:text="텍스트"
+            android:textSize="34sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>
