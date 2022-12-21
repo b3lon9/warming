@@ -57,7 +57,7 @@ public class Custom extends View {
 
         // 텍스트
         paint.setStyle(Paint.Style.FILL);
-        paint.setTextSize(30);
+        paint.setTextSize(100);
         String message = "테스트할 문자 입력";
         canvas.drawText(message, 10, 500, paint);
     }
