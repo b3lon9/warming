@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact">
+        <item>홍길동 010-1234-1234</item>
+        <item>먕 010-1234-1234</item>
+        <item>코로로 010-1234-1234</item>
+        <item>펙 010-1234-1234</item>
+        <item>응디 010-1234-1234</item>
+        <item>챱 010-1234-1234</item>
+        <item>홀란드 010-1234-1234</item>
+        <item>기기김 010-1234-1234</item>
+        <item></item>
+    </string-array>
+</resources>
